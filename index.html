@@ -1,23 +1,181 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>A Boa Idade</title>
-<style>
-body{
-font-family:Arial,sans-serif;
-background:#f4f4f4;
-text-align:center;
-padding:40px;
-color:#333;
-}
-h1{color:#2e7d32;}
-p{font-size:20px;max-width:700px;margin:auto;}
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="A Boa Idade — informação, inspiração, saúde, bem-estar e espiritualidade para pessoas 50+." />
+  <title>A Boa Idade | Viver bem depois dos 50</title>
+  <style>
+    :root{
+      --verde:#2f6b4f;
+      --verde-escuro:#214d39;
+      --verde-claro:#eaf4ee;
+      --bege:#f6f0e6;
+      --dourado:#c79a45;
+      --texto:#2e2e2e;
+      --branco:#ffffff;
+      --cinza:#6b7280;
+      --sombra:0 12px 32px rgba(0,0,0,.08);
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--texto);background:#fff;line-height:1.6}
+    a{text-decoration:none;color:inherit}
+    .container{width:min(1120px,92%);margin:0 auto}
+    header{position:sticky;top:0;z-index:1000;background:rgba(255,255,255,.96);backdrop-filter:blur(10px);border-bottom:1px solid #ececec}
+    .nav{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+    .brand{display:flex;align-items:center;gap:12px;font-weight:800;color:var(--verde-escuro);font-size:1.35rem}
+    .brand-mark{width:46px;height:46px;border-radius:50%;display:grid;place-items:center;background:var(--verde);color:#fff;font-size:1.1rem;box-shadow:var(--sombra)}
+    nav ul{list-style:none;display:flex;gap:22px;padding:0;margin:0;font-size:.96rem;font-weight:700}
+    nav a:hover{color:var(--verde)}
+    .hero{background:radial-gradient(circle at top right,rgba(199,154,69,.18),transparent 35%),linear-gradient(135deg,var(--bege),#fff 60%);padding:92px 0 78px}
+    .hero-grid{display:grid;grid-template-columns:1.15fr .85fr;align-items:center;gap:48px}
+    .eyebrow{display:inline-block;padding:8px 14px;border-radius:999px;background:var(--verde-claro);color:var(--verde-escuro);font-weight:700;margin-bottom:18px}
+    h1{font-size:clamp(2.4rem,5vw,4.7rem);line-height:1.05;margin:0 0 20px;color:var(--verde-escuro);max-width:780px}
+    .hero p{font-size:1.15rem;max-width:680px;color:#555;margin-bottom:30px}
+    .actions{display:flex;gap:14px;flex-wrap:wrap}
+    .btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 22px;border-radius:10px;font-weight:800;transition:.2s ease}
+    .btn-primary{background:var(--verde);color:#fff}
+    .btn-primary:hover{background:var(--verde-escuro);transform:translateY(-2px)}
+    .btn-secondary{border:2px solid var(--verde);color:var(--verde);background:#fff}
+    .hero-card{background:#fff;border-radius:24px;padding:32px;box-shadow:var(--sombra);border:1px solid #f0ece5}
+    .hero-card h3{margin-top:0;color:var(--verde-escuro);font-size:1.5rem}
+    .hero-card ul{padding-left:20px;margin-bottom:0}
+    section{padding:78px 0}
+    .section-title{text-align:center;margin-bottom:44px}
+    .section-title span{color:var(--dourado);font-weight:800;letter-spacing:.06em;text-transform:uppercase;font-size:.82rem}
+    .section-title h2{font-size:clamp(1.9rem,3vw,2.8rem);margin:8px 0 10px;color:var(--verde-escuro)}
+    .section-title p{max-width:720px;margin:0 auto;color:var(--cinza)}
+    .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+    .card{background:#fff;border:1px solid #ececec;border-radius:18px;padding:26px;box-shadow:0 8px 24px rgba(0,0,0,.05);transition:.2s ease}
+    .card:hover{transform:translateY(-4px);box-shadow:var(--sombra)}
+    .icon{width:52px;height:52px;display:grid;place-items:center;border-radius:14px;background:var(--verde-claro);font-size:1.5rem;margin-bottom:18px}
+    .card h3{margin:0 0 10px;color:var(--verde-escuro)}
+    .about{background:var(--verde-escuro);color:#fff}
+    .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+    .about h2{font-size:2.4rem;line-height:1.15;margin-top:0}
+    .quote{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.18);border-radius:20px;padding:28px;font-size:1.1rem}
+    .projects{background:#fafafa}
+    .project{background:#fff;border-radius:20px;padding:28px;border:1px solid #ececec}
+    .project strong{display:inline-block;color:var(--dourado);margin-bottom:8px}
+    .newsletter{background:linear-gradient(135deg,var(--verde),var(--verde-escuro));color:#fff;border-radius:24px;padding:46px;display:flex;align-items:center;justify-content:space-between;gap:26px}
+    .newsletter h2{margin:0 0 8px}
+    footer{background:#152f24;color:#d8e5dd;padding:34px 0;margin-top:80px}
+    .footer-content{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+    @media(max-width:860px){
+      nav ul{display:none}
+      .hero-grid,.about-grid{grid-template-columns:1fr}
+      .cards{grid-template-columns:1fr}
+      .newsletter{flex-direction:column;align-items:flex-start}
+      .hero{padding-top:64px}
+    }
+  </style>
 </head>
 <body>
-<h1>Bem-vindo ao A Boa Idade</h1>
-<p>Um espaço dedicado a orientar, inspirar e ajudar pessoas com mais de 50 anos a viverem uma vida mais saudável, ativa, próspera e feliz.</p>
+  <header>
+    <div class="container nav">
+      <a class="brand" href="#inicio" aria-label="A Boa Idade">
+        <span class="brand-mark">50+</span>
+        <span>A Boa Idade</span>
+      </a>
+      <nav aria-label="Navegação principal">
+        <ul>
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#conteudos">Conteúdos</a></li>
+          <li><a href="#projetos">Projetos</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="container hero-grid">
+        <div>
+          <span class="eyebrow">Um novo tempo para viver bem</span>
+          <h1>Mais experiência, mais propósito, mais vida.</h1>
+          <p>Informação, inspiração, saúde, bem-estar e espiritualidade para homens e mulheres que desejam viver a maturidade com autonomia, esperança e novos projetos.</p>
+          <div class="actions">
+            <a class="btn btn-primary" href="#conteudos">Conhecer o portal</a>
+            <a class="btn btn-secondary" href="#sobre">Nossa missão</a>
+          </div>
+        </div>
+        <aside class="hero-card">
+          <h3>O que você encontrará aqui</h3>
+          <ul>
+            <li>Saúde e qualidade de vida depois dos 50</li>
+            <li>Orientações práticas para o dia a dia</li>
+            <li>Motivação, fé e espiritualidade</li>
+            <li>Histórias, projetos e novas possibilidades</li>
+            <li>Conteúdos do Sr. Oliveira</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <section id="conteudos">
+      <div class="container">
+        <div class="section-title">
+          <span>Conteúdo para a vida real</span>
+          <h2>Informação que acolhe, orienta e inspira</h2>
+          <p>Um portal feito para pessoas maduras, com linguagem clara, respeito pela experiência de vida e atenção às mudanças que surgem depois dos 50.</p>
+        </div>
+        <div class="cards">
+          <article class="card"><div class="icon">❤️</div><h3>Saúde 50+</h3><p>Hábitos, prevenção, movimento, alimentação e qualidade de vida com responsabilidade.</p></article>
+          <article class="card"><div class="icon">🌿</div><h3>Bem-estar</h3><p>Ideias para manter a autonomia, cultivar bons hábitos e viver com mais leveza.</p></article>
+          <article class="card"><div class="icon">🙏</div><h3>Espiritualidade</h3><p>Reflexões que fortalecem a fé, a esperança e o sentido de cada nova etapa.</p></article>
+          <article class="card"><div class="icon">☕</div><h3>Sr. Oliveira</h3><p>Conversas sinceras, café quentinho e conselhos que nascem da experiência.</p></article>
+          <article class="card"><div class="icon">🎬</div><h3>A Estrada das Memórias</h3><p>Um projeto audiovisual sobre amor, tempo, escolhas e os caminhos que formam uma vida.</p></article>
+          <article class="card"><div class="icon">📚</div><h3>Guias e e-books</h3><p>Materiais práticos para saúde, reparos domésticos, motivação e desenvolvimento pessoal.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="sobre">
+      <div class="container about-grid">
+        <div>
+          <h2>A maturidade não é o fim da estrada. É uma nova forma de caminhar.</h2>
+          <p>O A Boa Idade nasceu para apoiar homens e mulheres que desejam seguir aprendendo, criando, cuidando de si e encontrando novas razões para acreditar no futuro.</p>
+          <p>Aqui, a experiência é valorizada e cada pessoa é convidada a viver esta etapa com dignidade, autonomia, fé e propósito.</p>
+        </div>
+        <div class="quote">“Envelhecer não é perder espaço. É descobrir novas maneiras de ocupar a própria vida.”</div>
+      </div>
+    </section>
+
+    <section class="projects" id="projetos">
+      <div class="container">
+        <div class="section-title">
+          <span>Nossos projetos</span>
+          <h2>Conteúdos com identidade e propósito</h2>
+        </div>
+        <div class="cards">
+          <article class="project"><strong>CAFÉ COM EXPERIÊNCIA</strong><h3>Sr. Oliveira</h3><p>Um personagem acolhedor, de fala simples e profunda, que recebe cada visitante como quem oferece uma cadeira à sombra e um café passado na hora.</p></article>
+          <article class="project"><strong>SÉRIE AUDIOVISUAL</strong><h3>A Estrada das Memórias</h3><p>Uma história sobre encontros, perdas, escolhas, fé e a presença discreta de Deus ao longo do caminho.</p></article>
+          <article class="project"><strong>CONHECIMENTO PRÁTICO</strong><h3>Biblioteca A Boa Idade</h3><p>Guias, artigos e materiais úteis para tornar o cotidiano mais seguro, saudável, independente e inspirador.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contato">
+      <div class="container">
+        <div class="newsletter">
+          <div>
+            <h2>O A Boa Idade está só começando.</h2>
+            <p>Novos artigos, histórias e projetos serão publicados em breve.</p>
+          </div>
+          <a class="btn btn-secondary" href="mailto:contato@aboaidade.com.br">Fale conosco</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-content">
+      <strong>A Boa Idade</strong>
+      <span>© 2026 — Informação, inspiração e propósito para viver bem depois dos 50.</span>
+    </div>
+  </footer>
 </body>
 </html>
