@@ -1,0 +1,14 @@
+A BOA IDADE — HOME OFICIAL
+
+Arquivos:
+- index.html
+- css/style.css
+- js/script.js
+- assets/hero-oficial.png
+
+Publicação:
+1. Abra o repositório aboaidade no GitHub.
+2. Clique em Add file > Upload files.
+3. Envie index.html e as pastas css, js e assets.
+4. Clique em Commit changes.
+5. Aguarde de 1 a 3 minutos e atualize aboaidade.com.br.
