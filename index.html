@@ -1,77 +1,606 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="A Boa Idade — saúde, bem-estar, espiritualidade e inspiração para viver bem depois dos 50.">
-<title>A Boa Idade</title>
-<link rel="stylesheet" href="css/style.css">
-<script src="js/script.js" defer></script>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <meta
+    name="description"
+    content="A Boa Idade: saúde, alimentação, exercícios, relacionamentos, utilidade pública e qualidade de vida para os 50+."
+  >
+
+  <title>A Boa Idade | Sua melhor fase começa agora</title>
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <script src="js/script.js" defer></script>
 </head>
+
 <body>
-<header id="inicio" class="hero">
-  <img src="assets/hero-oficial.png" alt="A Boa Idade 50+: árvore, estrada, banco, café e pôr do sol." class="hero__image">
-  <nav class="hero__links" aria-label="Navegação principal">
-    <a class="hotspot menu-inicio" href="#inicio" aria-label="Início"></a>
-    <a class="hotspot menu-conteudos" href="#conteudos" aria-label="Conteúdos"></a>
-    <a class="hotspot menu-projetos" href="#projetos" aria-label="Projetos"></a>
-    <a class="hotspot menu-sobre" href="#sobre" aria-label="Sobre"></a>
-    <a class="hotspot menu-contato" href="#contato" aria-label="Contato"></a>
-    <a class="hotspot botao-contato" href="#contato" aria-label="Fale conosco"></a>
-    <a class="hotspot botao-portal" href="#conteudos" aria-label="Conhecer o portal"></a>
-    <a class="hotspot faixa-saude" href="#saude" aria-label="Saúde 50+"></a>
-    <a class="hotspot faixa-bemestar" href="#bem-estar" aria-label="Bem-estar"></a>
-    <a class="hotspot faixa-espiritualidade" href="#espiritualidade" aria-label="Espiritualidade"></a>
-    <a class="hotspot faixa-memorias" href="#memorias" aria-label="A Estrada das Memórias"></a>
-    <a class="hotspot faixa-biblioteca" href="#biblioteca" aria-label="Biblioteca"></a>
-    <a class="hotspot faixa-oliveira" href="#sr-oliveira" aria-label="Sr. Oliveira"></a>
-  </nav>
-</header>
 
-<main>
-<section id="conteudos" class="section section--light">
-  <div class="container">
-    <div class="section-heading">
-      <span class="eyebrow">Conteúdo para a vida real</span>
-      <h1>Informação que acolhe, orienta e inspira</h1>
-      <p>Um portal feito para pessoas maduras, com linguagem clara, respeito pela experiência e espaço para novos projetos.</p>
+  <!-- CABEÇALHO -->
+  <header class="cabecalho">
+
+    <div class="container cabecalho__conteudo">
+
+      <a class="marca" href="#inicio" aria-label="Voltar ao início">
+        <span class="marca__simbolo">50+</span>
+
+        <span class="marca__texto">
+          <strong>A Boa Idade</strong>
+          <small>Revista digital</small>
+        </span>
+      </a>
+
+      <button
+        class="menu-botao"
+        type="button"
+        aria-label="Abrir menu"
+        aria-expanded="false"
+        aria-controls="menu-principal"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav
+        class="menu-principal"
+        id="menu-principal"
+        aria-label="Menu principal"
+      >
+        <a href="#inicio">Início</a>
+        <a href="#como-ajudar">Conteúdos</a>
+        <a href="#destaques">Destaques</a>
+        <a href="#equipe">Nossa equipe</a>
+        <a href="#sr-oliveira">Sr. Oliveira</a>
+        <a href="#contato">Contato</a>
+      </nav>
+
     </div>
-    <div class="cards">
-      <article id="saude" class="card"><div class="card__icon">❤️</div><h2>Saúde 50+</h2><p>Prevenção, movimento, alimentação e qualidade de vida com responsabilidade.</p><a href="#contato">Conteúdos em preparação →</a></article>
-      <article id="bem-estar" class="card"><div class="card__icon">🌿</div><h2>Bem-estar</h2><p>Autonomia, equilíbrio emocional, rotina, sono e novos hábitos.</p><a href="#contato">Conteúdos em preparação →</a></article>
-      <article id="espiritualidade" class="card"><div class="card__icon">🙏</div><h2>Espiritualidade</h2><p>Fé, família, esperança e propósito para fortalecer a caminhada.</p><a href="#contato">Reflexões em preparação →</a></article>
+
+  </header>
+
+
+  <main>
+
+    <!-- ABERTURA -->
+    <section class="hero" id="inicio">
+
+      <img
+        class="hero__imagem"
+        src="assets/hero-oficial.png"
+        alt="Paisagem acolhedora de A Boa Idade, com árvore, estrada, banco e pôr do sol."
+      >
+
+      <div class="hero__sombra"></div>
+
+      <div class="container hero__conteudo">
+
+        <span class="hero__etiqueta">
+          Bem-vindo ao A Boa Idade
+        </span>
+
+        <h1>
+          Cinquenta chegou?
+          <span>
+            Vem com a gente, a sua melhor fase começa agora!
+          </span>
+        </h1>
+
+        <p>
+          Saúde, alimentação, exercícios, bem-estar, relacionamentos,
+          utilidade pública, renda extra e reflexões para viver os 50+
+          com mais autonomia, qualidade de vida e propósito.
+        </p>
+
+        <a class="botao botao--principal" href="#como-ajudar">
+          Encontre o que você precisa
+        </a>
+
+      </div>
+
+    </section>
+
+
+    <!-- PORTAS DE ENTRADA -->
+    <section class="secao secao--clara" id="como-ajudar">
+
+      <div class="container">
+
+        <div class="titulo-secao">
+
+          <span class="titulo-secao__etiqueta">
+            Escolha por onde começar
+          </span>
+
+          <h2>Como podemos ajudar você hoje?</h2>
+
+          <p>
+            Toque no assunto que mais combina com o que você procura.
+            Organizamos tudo para que seja simples, rápido e acolhedor.
+          </p>
+
+        </div>
+
+
+        <div class="portas">
+
+          <a class="porta" href="#saude">
+            <span class="porta__icone">❤️</span>
+
+            <span class="porta__conteudo">
+              <strong>Quero cuidar da minha saúde</strong>
+
+              <small>
+                Prevenção, sono, bem-estar e qualidade de vida.
+              </small>
+
+              <span class="porta__link">Entrar →</span>
+            </span>
+          </a>
+
+
+          <a class="porta" href="#alimentacao">
+            <span class="porta__icone">🥗</span>
+
+            <span class="porta__conteudo">
+              <strong>Quero melhorar minha alimentação</strong>
+
+              <small>
+                Hábitos, receitas e escolhas alimentares para os 50+.
+              </small>
+
+              <span class="porta__link">Entrar →</span>
+            </span>
+          </a>
+
+
+          <a class="porta" href="#exercicios">
+            <span class="porta__icone">🏃</span>
+
+            <span class="porta__conteudo">
+              <strong>Quero recuperar minha disposição</strong>
+
+              <small>
+                Mobilidade, força, equilíbrio, alongamentos e Kegel.
+              </small>
+
+              <span class="porta__link">Entrar →</span>
+            </span>
+          </a>
+
+
+          <a class="porta" href="#mente">
+            <span class="porta__icone">🧠</span>
+
+            <span class="porta__conteudo">
+              <strong>Quero viver com mais tranquilidade</strong>
+
+              <small>
+                Autoestima, memória, emoções e novos começos.
+              </small>
+
+              <span class="porta__link">Entrar →</span>
+            </span>
+          </a>
+
+
+          <a class="porta" href="#relacionamentos">
+            <span class="porta__icone">🤝</span>
+
+            <span class="porta__conteudo">
+              <strong>Quero conversar sobre a vida</strong>
+
+              <small>
+                Família, casamento, perdas, solidão e recomeços.
+              </small>
+
+              <span class="porta__link">Entrar →</span>
+            </span>
+          </a>
+
+
+          <a class="porta porta--oliveira" href="#sr-oliveira">
+            <span class="porta__icone">☕</span>
+
+            <span class="porta__conteudo">
+              <strong>Quero tomar um café com o Sr. Oliveira</strong>
+
+              <small>
+                Experiências, reflexões, fé, propósito e esperança.
+              </small>
+
+              <span class="porta__link">Se achegue →</span>
+            </span>
+          </a>
+
+
+          <a class="porta" href="#renda">
+            <span class="porta__icone">💰</span>
+
+            <span class="porta__conteudo">
+              <strong>Quero descobrir novas possibilidades</strong>
+
+              <small>
+                Renda adicional, tecnologia e vida prática.
+              </small>
+
+              <span class="porta__link">Entrar →</span>
+            </span>
+          </a>
+
+
+          <a class="porta" href="#utilidade">
+            <span class="porta__icone">📌</span>
+
+            <span class="porta__conteudo">
+              <strong>Quero conhecer meus direitos</strong>
+
+              <small>
+                Leis, serviços e utilidade pública em linguagem simples.
+              </small>
+
+              <span class="porta__link">Entrar →</span>
+            </span>
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- DESTAQUES -->
+    <section class="secao secao--verde-suave" id="destaques">
+
+      <div class="container">
+
+        <div class="titulo-secao">
+
+          <span class="titulo-secao__etiqueta">
+            Informação que ajuda
+          </span>
+
+          <h2>Destaques para viver melhor</h2>
+
+          <p>
+            Conteúdos educativos e acessíveis para cuidar do corpo,
+            da mente, dos relacionamentos e da vida prática.
+          </p>
+
+        </div>
+
+
+        <div class="destaques-grid">
+
+          <article class="destaque" id="exercicios">
+
+            <span class="destaque__categoria">
+              Exercícios e mobilidade
+            </span>
+
+            <div class="destaque__icone">🏃</div>
+
+            <h3>Movimento e autonomia depois dos 50</h3>
+
+            <p>
+              Exercícios simples para fortalecer o corpo, melhorar o
+              equilíbrio e manter a independência no dia a dia.
+            </p>
+
+            <a href="#contato">
+              Conteúdo em preparação →
+            </a>
+
+          </article>
+
+
+          <article class="destaque" id="alimentacao">
+
+            <span class="destaque__categoria">
+              Alimentação
+            </span>
+
+            <div class="destaque__icone">🥗</div>
+
+            <h3>Alimentação simples para uma vida mais ativa</h3>
+
+            <p>
+              Informações sobre proteínas, fibras, vitaminas, hidratação
+              e escolhas alimentares possíveis para a rotina.
+            </p>
+
+            <a href="#contato">
+              Conteúdo em preparação →
+            </a>
+
+          </article>
+
+
+          <article class="destaque" id="utilidade">
+
+            <span class="destaque__categoria">
+              Utilidade pública
+            </span>
+
+            <div class="destaque__icone">📌</div>
+
+            <h3>Informação importante sem linguagem complicada</h3>
+
+            <p>
+              Direitos, leis, benefícios, segurança digital e serviços
+              que podem fazer diferença na vida de quem passou dos 50.
+            </p>
+
+            <a href="#contato">
+              Conteúdo em preparação →
+            </a>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ÁREAS EDITORIAIS -->
+    <section class="secao secao--clara" id="saude">
+
+      <div class="container">
+
+        <div class="titulo-secao">
+
+          <span class="titulo-secao__etiqueta">
+            Nossa revista
+          </span>
+
+          <h2>Conteúdos organizados para você</h2>
+
+          <p>
+            Cada assunto terá sua própria área, com artigos, vídeos,
+            orientações educativas e materiais para consulta.
+          </p>
+
+        </div>
+
+
+        <div class="editorias">
+
+          <article class="editoria">
+            <span>❤️</span>
+            <h3>Saúde e bem-estar</h3>
+            <p>
+              Prevenção, sono, autocuidado, disposição e qualidade de vida.
+            </p>
+          </article>
+
+          <article class="editoria">
+            <span>🏃</span>
+            <h3>Exercícios</h3>
+            <p>
+              Força, mobilidade, equilíbrio, alongamentos e assoalho pélvico.
+            </p>
+          </article>
+
+          <article class="editoria">
+            <span>🥗</span>
+            <h3>Alimentação</h3>
+            <p>
+              Hábitos, receitas e informações educativas para homens e mulheres.
+            </p>
+          </article>
+
+          <article class="editoria" id="mente">
+            <span>🧠</span>
+            <h3>Mente e autoestima</h3>
+            <p>
+              Emoções, memória, confiança, propósito e adaptação às mudanças.
+            </p>
+          </article>
+
+          <article class="editoria" id="relacionamentos">
+            <span>🤝</span>
+            <h3>Vida e relacionamentos</h3>
+            <p>
+              Família, casamento, amizades, perdas, solidão e recomeços.
+            </p>
+          </article>
+
+          <article class="editoria" id="renda">
+            <span>💰</span>
+            <h3>Renda e vida prática</h3>
+            <p>
+              Tecnologia, oportunidades, organização e novas possibilidades.
+            </p>
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- NOSSA EQUIPE -->
+    <section class="secao secao--bege" id="equipe">
+
+      <div class="container">
+
+        <div class="titulo-secao">
+
+          <span class="titulo-secao__etiqueta">
+            Quem acompanha você
+          </span>
+
+          <h2>Conheça a equipe do A Boa Idade</h2>
+
+          <p>
+            Personagens criados para apresentar conteúdos educativos
+            de maneira humana, clara e acolhedora.
+          </p>
+
+        </div>
+
+
+        <div class="equipe-grid">
+
+          <article class="membro">
+            <div class="membro__avatar">☕</div>
+            <h3>Sr. Oliveira</h3>
+            <strong>Experiência de vida</strong>
+            <p>
+              Relacionamentos, escolhas, perdas, propósito, fé e esperança.
+            </p>
+          </article>
+
+          <article class="membro">
+            <div class="membro__avatar">💪</div>
+            <h3>Professor de movimento</h3>
+            <strong>Força e mobilidade</strong>
+            <p>
+              Exercícios educativos para autonomia, equilíbrio e disposição.
+            </p>
+          </article>
+
+          <article class="membro">
+            <div class="membro__avatar">🌿</div>
+            <h3>Professora de movimento</h3>
+            <strong>Saúde e autonomia feminina</strong>
+            <p>
+              Mobilidade, fortalecimento, equilíbrio e assoalho pélvico.
+            </p>
+          </article>
+
+          <article class="membro">
+            <div class="membro__avatar">🥗</div>
+            <h3>Conselheiros alimentares</h3>
+            <strong>Boas escolhas à mesa</strong>
+            <p>
+              Conteúdos educativos sobre alimentação masculina e feminina.
+            </p>
+          </article>
+
+        </div>
+
+
+        <p class="aviso-saude">
+          <strong>Importante:</strong>
+          os conteúdos de saúde, alimentação e exercícios são educativos
+          e não substituem avaliação, diagnóstico ou acompanhamento profissional.
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <!-- SR. OLIVEIRA -->
+    <section class="oliveira" id="sr-oliveira">
+
+      <div class="container oliveira__conteudo">
+
+        <div class="oliveira__simbolo">
+          ☕
+        </div>
+
+        <div class="oliveira__texto">
+
+          <span class="oliveira__etiqueta">
+            Um café com o Sr. Oliveira
+          </span>
+
+          <h2>
+            Informação mostra o caminho. Experiência ajuda a compreender
+            por que vale a pena caminhar.
+          </h2>
+
+          <blockquote>
+            “Se achegue! A vida muda depois dos 50, é verdade.
+            Mas ela também pode ganhar novos significados.
+            Ainda há muito para aprender, compartilhar e viver.”
+          </blockquote>
+
+          <a class="botao botao--claro" href="#contato">
+            Conhecer as reflexões
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- CONTATO -->
+    <section class="secao secao--clara" id="contato">
+
+      <div class="container contato">
+
+        <div>
+
+          <span class="titulo-secao__etiqueta">
+            Fale conosco
+          </span>
+
+          <h2>O A Boa Idade está apenas começando</h2>
+
+          <p>
+            Novos artigos, vídeos, guias, protocolos e informações úteis
+            serão publicados para acompanhar você nesta fase da vida.
+          </p>
+
+        </div>
+
+        <a
+          class="botao botao--principal"
+          href="mailto:contato@aboaidade.com.br"
+        >
+          Enviar mensagem
+        </a>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- RODAPÉ -->
+  <footer class="rodape">
+
+    <div class="container rodape__conteudo">
+
+      <div>
+        <strong>A Boa Idade</strong>
+
+        <p>
+          Informação, acolhimento e propósito para os 50+.
+        </p>
+      </div>
+
+      <nav aria-label="Links do rodapé">
+        <a href="#inicio">Início</a>
+        <a href="#como-ajudar">Conteúdos</a>
+        <a href="#equipe">Equipe</a>
+        <a href="#contato">Contato</a>
+      </nav>
+
+      <small>
+        © 2026 A Boa Idade. Conteúdo educativo e informativo.
+      </small>
+
     </div>
-  </div>
-</section>
 
-<section id="sobre" class="section section--green">
-  <div class="container two-columns">
-    <div><span class="eyebrow eyebrow--gold">Nossa missão</span><h2>A maturidade não é o fim da estrada.</h2><p>A Boa Idade nasceu para apoiar homens e mulheres que desejam seguir aprendendo, criando, cuidando de si e encontrando novas razões para acreditar no futuro.</p><p>Aqui, experiência não é passado: é patrimônio, direção e ponto de partida.</p></div>
-    <blockquote>“Mais experiência. Mais propósito. Mais vida.”</blockquote>
-  </div>
-</section>
+  </footer>
 
-<section id="projetos" class="section section--beige">
-  <div class="container">
-    <div class="section-heading"><span class="eyebrow">Nossos projetos</span><h2>Um universo com identidade própria</h2><p>Histórias, conversas e materiais que acompanham a vida depois dos 50.</p></div>
-    <div class="cards">
-      <article id="sr-oliveira" class="card"><div class="card__icon">☕</div><h2>Café com o Sr. Oliveira</h2><p>Conversas sinceras, reflexões e conselhos que nascem da experiência.</p><a href="#contato">Página em preparação →</a></article>
-      <article id="memorias" class="card"><div class="card__icon">🎬</div><h2>A Estrada das Memórias</h2><p>Uma série sobre encontros, escolhas, fé e os caminhos que formam uma vida.</p><a href="#contato">Projeto em desenvolvimento →</a></article>
-      <article id="biblioteca" class="card"><div class="card__icon">📚</div><h2>Biblioteca A Boa Idade</h2><p>E-books, receitas, protocolos, guias e materiais úteis para o cotidiano.</p><a href="#contato">Acervo em preparação →</a></article>
-    </div>
-  </div>
-</section>
-
-<section id="contato" class="section section--light">
-  <div class="container">
-    <div class="contact-box">
-      <div><span class="eyebrow eyebrow--gold">Fale conosco</span><h2>A Boa Idade está só começando.</h2><p>Em breve, novos conteúdos, projetos e materiais estarão disponíveis.</p></div>
-      <a class="button" href="mailto:contato@aboaidade.com.br">Enviar mensagem</a>
-    </div>
-  </div>
-</section>
-</main>
-
-<footer><div class="container footer-content"><strong>A Boa Idade</strong><span>© 2026 — Informação, inspiração e propósito para viver bem depois dos 50.</span></div></footer>
 </body>
 </html>
