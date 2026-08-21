@@ -227,11 +227,13 @@ select {
 
 .hero__bench-interaction {
   position: absolute;
-  right: clamp(16px, 4vw, 56px);
-  bottom: clamp(20px, 5vw, 48px);
+  top: 45%;
+  left: 79%;
+  transform: translate(-50%, -100%);
   display: inline-flex;
   flex-direction: column;
   align-items: center;
+  line-height: normal;
   z-index: 4;
 }
 
@@ -247,6 +249,7 @@ select {
   color: #fffdf7;
   font-weight: 800;
   font-size: 0.98rem;
+  white-space: nowrap;
   box-shadow: 0 10px 22px rgba(53, 31, 11, 0.28), inset 0 1px 0 rgba(255, 255, 255, 0.24);
   cursor: pointer;
   transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease;
@@ -793,8 +796,11 @@ select {
 
   .hero__bench-interaction {
     position: relative;
+    top: auto;
+    left: auto;
     right: auto;
     bottom: auto;
+    transform: none;
     width: 100%;
     padding: 14px 16px 0;
     background: var(--bege);
