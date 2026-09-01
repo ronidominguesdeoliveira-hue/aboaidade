@@ -121,6 +121,54 @@
   color: var(--verde-escuro);
 }
 
+/* Imagem solta no corpo do artigo (uso geral) */
+.artigo__corpo img {
+  width: 100%;
+  border-radius: 18px;
+  box-shadow: 0 10px 26px rgba(28, 69, 44, 0.1);
+}
+
+.artigo__corpo figure {
+  margin: 1.8em 0;
+}
+
+.artigo__corpo figcaption {
+  margin-top: 10px;
+  color: var(--texto-suave);
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+/* Comparação lado a lado (ex.: "sozinho" x "com apoio") */
+.artigo__comparacao {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  margin: 2em 0;
+}
+
+.artigo__comparacao-item img {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  border-radius: 18px;
+  box-shadow: 0 10px 26px rgba(28, 69, 44, 0.1);
+}
+
+.artigo__comparacao-item figcaption {
+  margin-top: 10px;
+  color: var(--verde-escuro);
+  font-size: 0.92rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+@media (max-width: 720px) {
+  .artigo__comparacao {
+    grid-template-columns: 1fr;
+  }
+}
+
 .artigo__corpo blockquote {
   margin: 1.8em 0;
   padding: 18px 22px;
