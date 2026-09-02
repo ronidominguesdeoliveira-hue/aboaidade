@@ -168,7 +168,12 @@
     grid-template-columns: 1fr;
   }
 }
-
+/* Comparação estilo banner: texto já embutido na imagem,
+   sem corte forçado e sem legenda separada */
+.artigo__comparacao--banner .artigo__comparacao-item img {
+  aspect-ratio: auto;
+  object-fit: initial;
+}
 .artigo__corpo blockquote {
   margin: 1.8em 0;
   padding: 18px 22px;
