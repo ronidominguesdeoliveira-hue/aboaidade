@@ -323,3 +323,72 @@
     grid-template-columns: 1fr;
   }
 }
+/* ==========================================================
+   ADICIONAR AO FINAL DE assets/css/artigo.css
+   Componente: legenda de ícones (genérico, reutilizável em
+   qualquer artigo que tenha uma imagem com ícones/setas —
+   mesma ideia do .mapa-nutricional, mas com nome genérico)
+   ========================================================== */
+
+.artigo__legenda-icones {
+  margin: 2em 0;
+}
+
+.artigo__legenda-icones img {
+  width: 100%;
+  border-radius: 18px;
+  box-shadow: 0 10px 26px rgba(28, 69, 44, 0.1);
+}
+
+.artigo__legenda-icones-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  margin-top: 18px;
+}
+
+.artigo__legenda-icones-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 14px 16px;
+  border-radius: 14px;
+  background: var(--verde-suave);
+}
+
+.artigo__legenda-icones-icone {
+  flex: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: var(--verde-escuro);
+  color: #fff;
+  font-size: 1.1rem;
+}
+
+.artigo__legenda-icones-item--dourado .artigo__legenda-icones-icone {
+  background: var(--dourado);
+}
+
+.artigo__legenda-icones-item strong {
+  display: block;
+  margin-bottom: 2px;
+  color: var(--verde-escuro);
+  font-size: 0.98rem;
+}
+
+.artigo__legenda-icones-item p {
+  margin: 0;
+  color: var(--texto-suave);
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+@media (max-width: 720px) {
+  .artigo__legenda-icones-grid {
+    grid-template-columns: 1fr;
+  }
+}
