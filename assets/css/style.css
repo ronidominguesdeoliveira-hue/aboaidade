@@ -554,6 +554,14 @@ select {
   font-size: 2rem;
 }
 
+.editoria a {
+  display: inline-block;
+  margin-top: 16px;
+  color: var(--verde);
+  font-weight: 800;
+  text-decoration: none;
+}
+
 .equipe-grid {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
