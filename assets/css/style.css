@@ -593,6 +593,25 @@ select {
   font-size: 2rem;
   box-shadow: 0 10px 24px rgba(71, 57, 29, 0.1);
 }
+.membro__avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.membro__avatar--dupla {
+  width: auto;
+  display: flex;
+  gap: 8px;
+  background: transparent;
+  box-shadow: none;
+}
+
+.membro__avatar--dupla img {
+  width: 74px;
+  height: 74px;
+}
 
 .membro strong {
   display: block;
