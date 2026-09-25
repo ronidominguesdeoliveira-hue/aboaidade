@@ -586,18 +586,22 @@ select {
   width: 74px;
   height: 74px;
   display: grid;
-  place-items: center;
+  place-items: stretch;
   margin: 0 auto 18px;
   border-radius: 50%;
+  position: relative;
+overflow: hidden;
   background: var(--branco);
   font-size: 2rem;
   box-shadow: 0 10px 24px rgba(71, 57, 29, 0.1);
 }
 .membro__avatar img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 50%;
+  position: absolute;
+inset: 0;
+width: 100%;
+height: 100%;
+object-fit: cover;
+border-radius: 50%;
 }
 
 .membro__avatar--dupla {
