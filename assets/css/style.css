@@ -921,3 +921,8 @@ border-radius: 16px;
     justify-content: flex-start;
   }
 }
+/* Enquadramento das fotos da equipe: prioriza o rosto */
+.membro__avatar img[src*="movimento"],
+.membro__avatar img[src*="sr-oliveira"] {
+  object-position: center top;
+}
