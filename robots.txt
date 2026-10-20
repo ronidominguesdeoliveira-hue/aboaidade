@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /conteudos/_template.html
+
+Sitemap: https://aboaidade.com.br/sitemap.xml
