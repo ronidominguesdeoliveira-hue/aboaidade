@@ -18,16 +18,58 @@
   <title>Saúde e bem-estar | A Boa Idade</title>
   <link rel="stylesheet" href="../assets/css/style.css">
   <link rel="stylesheet" href="../assets/css/artigo.css">
+<script src="../assets/js/script.js" defer></script>
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4302673214607980"
      crossorigin="anonymous"></script>
 </head>
 <body>
 
-        <header class="artigo__voltar-bar container pagina-editoria">
-    <a href="../index.html" class="artigo__voltar">← Voltar para A Boa Idade</a>
-  </header>
+<!-- CABEÇALHO -->
+<header class="cabecalho">
+  <div class="container cabecalho__conteudo">
+    <a class="marca" href="../index.html#inicio" aria-label="Voltar ao início">
+      <span class="marca__simbolo">50+</span>
+      <span class="marca__texto">
+        <strong>A Boa Idade</strong>
+        <small>Revista digital</small>
+      </span>
+    </a>
 
-        <main class="container pagina-editoria" style="padding-bottom: 60px;">
+    <button
+      class="menu-botao"
+      type="button"
+      aria-label="Abrir menu"
+      aria-expanded="false"
+      aria-controls="menu-principal"
+    >
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav
+      class="menu-principal"
+      id="menu-principal"
+      aria-label="Menu principal"
+    >
+      <a href="../index.html#inicio">Início</a>
+      <a href="../index.html#como-ajudar">Conteúdos</a>
+      <a href="../index.html#destaques">Destaques</a>
+      <a href="../index.html#equipe">Nossa equipe</a>
+      <a href="../cafe-com-sr-oliveira.html">Sr. Oliveira</a>
+      <a href="../index.html#contato">Contato</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <!-- VOLTAR -->
+  <div class="container artigo__voltar-bar">
+    <a href="../index.html" class="artigo__voltar">← Voltar para o início</a>
+  </div>
+
+  <div class="container pagina-editoria" style="padding-bottom: 60px;">
     <h1 class="artigo__titulo">Saúde e bem-estar</h1>
 
     <p>Prevenção, autocuidado, disposição e qualidade de vida — aqui reunimos os conteúdos que ajudam você a entender melhor o seu corpo em cada fase depois dos 50.</p>
@@ -73,7 +115,26 @@
       </article>
 
     </div>
-  </main>
+  </div>
+
+</main>
+
+<!-- RODAPÉ -->
+<footer class="rodape">
+  <div class="container rodape__conteudo">
+    <div>
+      <strong>A Boa Idade</strong>
+      <p>Informação, acolhimento e propósito para os 50+.</p>
+    </div>
+    <nav aria-label="Links do rodapé">
+      <a href="../index.html#inicio">Início</a>
+      <a href="../index.html#como-ajudar">Conteúdos</a>
+      <a href="../index.html#equipe">Equipe</a>
+      <a href="../index.html#contato">Contato</a>
+    </nav>
+    <small>© 2026 A Boa Idade. Conteúdo educativo e informativo.</small>
+  </div>
+</footer>
 
 </body>
 </html>
