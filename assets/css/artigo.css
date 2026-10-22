@@ -533,3 +533,36 @@
     grid-template-columns: 1fr;
   }
 }
+
+
+/* --- Duas imagens lado a lado com legenda (ex.: comparativo "sem apoio x com apoio") --- */
+.artigo__par-imagens {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  margin: 24px 0;
+}
+
+.artigo__par-imagens figure {
+  margin: 0;
+}
+
+.artigo__par-imagens img {
+  display: block;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+}
+
+.artigo__par-imagens figcaption {
+  margin-top: 10px;
+  color: var(--texto-suave);
+  font-size: 0.95rem;
+  line-height: 1.5;
+  text-align: center;
+}
+
+@media (max-width: 720px) {
+  .artigo__par-imagens {
+    grid-template-columns: 1fr;
+  }
+}
