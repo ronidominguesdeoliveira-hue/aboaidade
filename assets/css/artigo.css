@@ -566,3 +566,21 @@
     grid-template-columns: 1fr;
   }
 }
+
+/* --- Imagem única com legenda embaixo --- */
+.artigo__figura {
+  margin: 24px 0;
+}
+
+.artigo__figura img {
+  display: block;
+}
+
+.artigo__figura figcaption {
+  margin-top: 10px;
+  color: var(--texto-suave);
+  font-size: 0.95rem;
+  font-style: italic;
+  line-height: 1.5;
+  text-align: center;
+}
