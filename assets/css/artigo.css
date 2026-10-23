@@ -602,3 +602,15 @@
   border-radius: 50%;
   margin: 0;
 }
+
+/* Par de imagens verticais (retrato): mostra a foto inteira em vez de cortar em 3:2 — usado em renda extra */
+.artigo__par-imagens--vertical img {
+  aspect-ratio: auto;
+}
+
+@media (max-width: 720px) {
+  .artigo__par-imagens--vertical img {
+    aspect-ratio: 4 / 5;
+    object-position: center top;
+  }
+}
