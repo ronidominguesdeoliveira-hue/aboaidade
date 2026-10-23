@@ -584,3 +584,21 @@
   line-height: 1.5;
   text-align: center;
 }
+
+/* Ícone com foto (recorte redondo) no lugar do emoji — usado em vida e relacionamentos */
+.artigo__legenda-icones-icone--foto,
+.artigo__legenda-icones-item--dourado .artigo__legenda-icones-icone--foto {
+  width: 56px;
+  height: 56px;
+  background: transparent;
+  overflow: hidden;
+}
+
+.artigo__legenda-icones .artigo__legenda-icones-icone--foto img {
+  width: 100%;
+  box-shadow: none;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: 0;
+}
